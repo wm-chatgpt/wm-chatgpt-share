@@ -153,7 +153,7 @@ func GetEnvScript(ctx g.Ctx) string {
 
 // 检查是否有新版本
 func CheckNewVersion(ctx g.Ctx) (buildId string) {
-	resVar := g.Client().GetVar(ctx, "https://tcr9i.closeai.biz"+"/ping")
+	resVar := g.Client().GetVar(ctx, CHATPROXY+"/ping")
 	resJson := gjson.New(resVar)
 
 	buildId = resJson.Get("buildId").String()
