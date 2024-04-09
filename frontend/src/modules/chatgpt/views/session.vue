@@ -28,15 +28,13 @@
 		<f-k-arkos
 			:public-key="publicKey"
 			mode="lightbox"
-			arkosUrl="https://tcr9i-test.aiflows.org"
+			arkosUrl="https://tcr9i-login.closeai.biz"
 			@onCompleted="onCompleted($event)"
 			@onError="onError($event)"
 		/>
 	</cl-crud>
-	arkosUrl="https://tcr9i-test.aiflows.org"
 
 	<!--	arkosUrl="https://tcr9i-login.closeai.biz"-->
-
 </template>
 
 <script lang="ts" name="chatgpt-session" setup>

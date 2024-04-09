@@ -51,9 +51,9 @@ func init() {
 	}
 	g.Log().Info(ctx, "CHATPROXY:", CHATPROXY)
 
-	xyproxy := g.Cfg().MustGetWithEnv(ctx, "ARKPROXY").String()
-	if xyproxy != "" {
-		ARKPROXY = xyproxy
+	arkProxy := g.Cfg().MustGetWithEnv(ctx, "ARKPROXY").String()
+	if arkProxy != "" {
+		ARKPROXY = arkProxy
 	}
 	g.Log().Info(ctx, "ARKPROXY:", ARKPROXY)
 
