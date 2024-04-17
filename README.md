@@ -8,15 +8,5 @@
 快速部署
 
 ```bash
-curl -sSfL https://raw.githubusercontent.com/hanglegehang/chatgpt-share-server/deploy/quick-install.sh | bash
+curl -sSfL https://raw.githubusercontent.com/wm-chatgpt/wm-share-server/deploy/quick-install.sh | bash
 ```
-
-## 文档
-
-[https://chatgpt-share-server.xyhelper.cn](https://chatgpt-share-server.xyhelper.cn)
-
-## 预览
-
-[https://chatgpt-share-server.xyhelper.cn/preview](https://chatgpt-share-server.xyhelper.cn/preview)
-
-![preview](docs/.vuepress/public/images/chat.png)
