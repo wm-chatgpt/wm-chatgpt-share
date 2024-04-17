@@ -18,7 +18,7 @@ var (
 	ARKPROXY     = "https://tcr9i.closeai.biz"
 	AUTHKEY      = "xyhelper"
 	ArkoseUrl    = "/v2/"
-	BuildId      = "openai"
+	BuildId      = "HT8siNKCjft6zp5kLmubE"
 	CacheBuildId = "HT8siNKCjft6zp5kLmubE"
 	AssetPrefix  = "https://cdn.aiflows.org"
 	PK40         = "35536E1E-65B4-4D96-9D97-6ADB7EFF8147"

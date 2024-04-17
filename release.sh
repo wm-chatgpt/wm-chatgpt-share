@@ -6,9 +6,9 @@ set -e
 #rm -rf ./backend/resource/public/list
 #git clone -b dist https://github.com/Hanwencc/car-list.git ./backend/resource/public/list
 # 检测是否存在目录 ./backend/resource/public/xyhelper
-if [ ! -d "./backend/resource/public/xyhelper" ]; then
-    echo "Create directory ./backend/resource/public/xyhelper"
-    mkdir -p "./backend/resource/public/xyhelper"
+if [ ! -d "./backend/resource/public/admin" ]; then
+    echo "Create directory ./backend/resource/public/admin"
+    mkdir -p "./backend/resource/public/admin"
     cd frontend
     yarn
     yarn build

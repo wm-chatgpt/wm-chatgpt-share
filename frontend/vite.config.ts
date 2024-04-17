@@ -15,7 +15,7 @@ function resolve(dir: string) {
 
 export default (): UserConfig => {
 	return {
-		base: "/xyhelper/",
+		base: "/amdin/",
 		plugins: [
 			vue(),
 			compression(),
@@ -49,7 +49,7 @@ export default (): UserConfig => {
 			}
 		},
 		build: {
-			outDir: "../backend/resource/public/xyhelper",
+			outDir: "../backend/resource/public/admin",
 			minify: "terser",
 			terserOptions: {
 				compress: {
