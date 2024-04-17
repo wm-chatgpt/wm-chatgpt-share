@@ -1,2 +1,0 @@
-# Chatgpt-Share-Server
-
