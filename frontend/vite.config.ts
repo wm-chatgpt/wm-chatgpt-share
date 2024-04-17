@@ -15,7 +15,7 @@ function resolve(dir: string) {
 
 export default (): UserConfig => {
 	return {
-		base: "/amdin/",
+		base: "/admin/",
 		plugins: [
 			vue(),
 			compression(),
