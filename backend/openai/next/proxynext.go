@@ -39,6 +39,9 @@ func ProxyNext(r *ghttp.Request) {
 		if response.StatusCode != 200 {
 			return nil
 		}
+		if response.Header.Get("Content-Type") != "application/json" {
+			return nil
+		}
 		// 读取响应体
 		body, err := io.ReadAll(response.Body)
 		if err != nil {

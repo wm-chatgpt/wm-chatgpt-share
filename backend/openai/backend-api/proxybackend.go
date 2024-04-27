@@ -76,7 +76,6 @@ func ProxyBackendWithCar(r *ghttp.Request) {
 		}).Cache(gdb.CacheOption{
 			Duration: time.Hour,
 			Name:     conv,
-			Force:    true,
 		}).One()
 		if err != nil {
 			g.Log().Error(ctx, err)

@@ -34,6 +34,32 @@ func Login(r *ghttp.Request) {
 
 			return
 		}
+		usertoken := r.Session.MustGet("usertoken").String()
+		if usertoken != "" {
+			g.Log().Debug(ctx, "usertoken: ", usertoken)
+			req := g.MapStrStr{
+				"usertoken": usertoken,
+				"carid":     carid,
+			}
+			loginVar := g.Client().PostVar(ctx, config.OauthUrl, req)
+			loginJson := gjson.New(loginVar)
+			loginJson.Dump()
+			code := loginJson.Get("code").Int()
+			if code != 1 {
+				msg := loginJson.Get("msg").String()
+				r.Response.WriteTpl("login.html", g.Map{
+					"error": msg,
+					"carid": req["carid"],
+				})
+				return
+			} else {
+				r.Session.Set("usertoken", usertoken)
+				r.Session.Set("carid", carid)
+				r.Response.RedirectTo("/")
+			}
+
+		}
+
 		var badgeSVG []byte
 
 		count := utility.GetStatsInstance(carid).GetCallCount()
