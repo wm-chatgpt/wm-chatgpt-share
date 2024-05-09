@@ -36,6 +36,11 @@ func Login(r *ghttp.Request) {
 		}
 		usertoken := r.Session.MustGet("usertoken").String()
 		if usertoken != "" {
+			r.Session.Set("carid", carid)
+			r.Response.RedirectTo("/")
+			return
+		}
+		if usertoken != "" {
 			g.Log().Debug(ctx, "usertoken: ", usertoken)
 			req := g.MapStrStr{
 				"usertoken": usertoken,
