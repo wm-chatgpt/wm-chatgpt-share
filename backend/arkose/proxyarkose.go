@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	UpStream = config.ARKPROXY
+	UpStream = config.CHATPROXY
 	proxy    *httputil.ReverseProxy
 	Remote   *url.URL
 )

@@ -20,7 +20,7 @@ var (
 	ArkoseUrl    = "/v2/"
 	BuildId      = "HT8siNKCjft6zp5kLmubE"
 	CacheBuildId = "HT8siNKCjft6zp5kLmubE"
-	AssetPrefix  = "https://cdn.aiflows.org"
+	AssetPrefix  = "https://oaistatic-cdn.closeai.biz"
 	PK40         = "35536E1E-65B4-4D96-9D97-6ADB7EFF8147"
 	PK35         = "3D86FBBA-9D22-402A-B512-3420086BA6CC"
 	envScriptTpl = `
